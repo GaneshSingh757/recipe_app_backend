@@ -18,6 +18,7 @@ class Command(BaseCommand):
         db_up = False
         while db_up is False:
             try:
+                self.stdout.write('Trying to connect to DB...')
                 self.check(databases=['default'])
                 db_up = True
             except (Psycopg2OpError, OperationalError):
