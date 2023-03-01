@@ -2,8 +2,8 @@
 Backend development of Recipe App with django
 
 # commands to run
-Linting - 
-docker-compose run --rm app sh -c "flake8"
+Linting and Testing -
+docker-compose run --rm app sh -c "python manage.py wait_for_db && python manage.py test && flake8"
 
-Run - 
+Run -
 docker-compose run
