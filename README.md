@@ -1,9 +1,13 @@
-# recipe_app_backend
-Backend development of Recipe App with django
+# Recipe App Backend
+Backend development of Recipe App with django.
 
-# commands to run
+# Commands to run
 Linting and Testing -
+```sh
 docker-compose run --rm app sh -c "python manage.py wait_for_db && python manage.py test && flake8"
+```
 
 Run -
-docker-compose run
+```sh
+docker-compose up
+```
