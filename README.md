@@ -11,3 +11,7 @@ Run -
 ```sh
 docker-compose up
 ```
+
+Once all the containers are up and running, click the below link -
+
+<a href="https://localhost:8000/api/docs/#/" target="_blank">API Docs</a>
